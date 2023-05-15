@@ -14,8 +14,8 @@
     
 <nav class="border-gray-200 bg-gray-900">
     <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
-        <a href="#" class="flex items-center">
-            <img src="https://cdn-icons-png.flaticon.com/512/5388/5388630.png" class="h-8 mr-3" alt="Flowbite Logo" />
+        <a href="{% url 'main' %}" class="flex items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5388/5388630.png" class="h-8 mr-3" alt="Site Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Learn English</span>
         </a>
         <div class="flex items-center md:order-2">
@@ -30,7 +30,7 @@
         <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
             <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 border-b
+                    <a href="{% url 'main' %}" class="block py-2 pl-3 pr-4 border-b
                     md:border-0 md:p-0
                     text-white hover:bg-gray-700 hover:text-blue-500
                     md:hover:bg-transparent border-gray-700" aria-current="page">Asosiy Sahifa</a>
@@ -48,7 +48,7 @@
                     md:hover:bg-transparent border-gray-700">Testlar</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 border-b
+                    <a href="{% url 'about' %}" class="block py-2 pl-3 pr-4 border-b
                     md:border-0 md:hover:text-blue-600 md:p-0 text-white
                     hover:bg-gray-700 hover:text-blue-500 md:hover:bg-transparent border-gray-700">Sayt haqida</a>
                 </li>
