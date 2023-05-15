@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+    <section>
+        <div class="px-24 pb-24">
+            <div class="py-16 px-8 mt-16 rounded-xl border-solid border-2 border-inherit">
+                <p class="text-center font-semibold text-3xl pb-8">{{ course_detail.title }}</p>
+                {{ course_detail.body | safe }}
+                <a href="{% url 'courses' %}" class="float-right bg-blue-700 text-white px-5 py-1 hover:bg-blue-600 rounded">Ortga qaytish</a>
+            </div>
+
+        </div>
+    </section>
+{% endblock body %}
