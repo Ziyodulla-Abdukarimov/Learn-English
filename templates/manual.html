@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% block body %}
+    <section class="text-gray-600 body-font">
+        <div class="container px-32 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                {% for manual in resources %}
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="manual" class="object-cover object-center w-full h-full block"
+                                 src="{{ manual.img.url }}">
+                        </a>
+                        <div class="mt-4">
+                            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">{{ manual.title }}</h3>
+                            <h2 class="text-gray-900 title-font text-lg font-medium pb-2">{{ manual.body }}</h2>
+                            <button class="w-full bg-blue-800 text-white rounded transition ease-in-out duration-150 bg-blue-500 hover:scale-105 hover:bg-indigo-500 duration-300">
+                                <a href="{{ manual.file.url }}">
+                                <i class="fa-solid fa-download text-xl py-1"></i> Yuklab olish
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
