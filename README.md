@@ -20,9 +20,9 @@ Once `pip` has finished downloading the dependencies:
 (env)$ cd project
 (env)$ python manage.py runserver
 ```
-And navigate to `http://127.0.0.1:8000/swagger/`.
+And navigate to `http://127.0.0.1:8000/`.
 
-![alt text](https://github.com/Ziyodulla-Abdukarimov/blog_api/blob/master/readme_files/swagger.png?raw=true)
+![alt text](https://github.com/Ziyodulla-Abdukarimov/Learn-English/blob/master/readme1.png?raw=true)
 
 
 <a href="https://www.buymeacoffee.com/Ziyodulladb" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
