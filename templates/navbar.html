@@ -1,0 +1,60 @@
+<nav class="border-gray-200 bg-gray-900">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+        <a href="{% url 'main' %}" class="flex items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5388/5388630.png" class="h-8 mr-3" alt="Site Logo"/>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Learn English</span>
+        </a>
+        <div class="flex items-center md:order-2">
+            <a href="{% url 'login' %}" class="text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2
+            md:px-5 md:py-2.5 mr-1 md:mr-2 bg-gray-700 focus:outline-none hover:text-gray-900 ring-gray-800">Tizimga
+                kirish</a>
+            <a href="{% url 'register' %}"
+               class="text-white bg-blue focus:ring-4 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-blue-800">Ro'yxatdan
+                o'tish</a>
+            <button data-collapse-toggle="mega-menu" type="button"
+                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+                    aria-controls="mega-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                <li>
+                    <a href="{% url 'main' %}" class="block py-2 pl-3 pr-4 border-b
+                    md:border-0 md:p-0
+                    text-white hover:bg-gray-700 hover:text-blue-500
+                    md:hover:bg-transparent border-gray-700" aria-current="page">Asosiy Sahifa</a>
+                </li>
+                <li>
+                    <a href="{% url 'courses' %}" class="block py-2 pl-3 pr-4 border-b
+                    md:border-0 md:p-0
+                    text-white hover:bg-gray-700 hover:text-blue-500
+                    md:hover:bg-transparent border-gray-700">Darsliklar</a>
+                </li>
+                <li>
+                    <a href="{% url 'manual' %}" class="block py-2 pl-3 pr-4 border-b
+                    md:border-0 md:p-0
+                    text-white hover:bg-gray-700 hover:text-blue-500
+                    md:hover:bg-transparent border-gray-700">Qo'llanmalar</a>
+                </li>
+                <li>
+                    <a href="{% url 'list-quizzes' %}" class="block py-2 pl-3 pr-4 border-b
+                    md:border-0 md:p-0
+                    text-white hover:bg-gray-700 hover:text-blue-500
+                    md:hover:bg-transparent border-gray-700">Testlar</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}" class="block py-2 pl-3 pr-4 border-b
+                    md:border-0 md:hover:text-blue-600 md:p-0 text-white
+                    hover:bg-gray-700 hover:text-blue-500 md:hover:bg-transparent border-gray-700">Sayt haqida</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

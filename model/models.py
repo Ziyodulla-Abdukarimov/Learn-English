@@ -13,6 +13,7 @@ class Course(models.Model):
 
 class Recourse(models.Model):
     title = models.CharField(max_length=150)
+    img = models.ImageField(upload_to='images/')
     body = models.CharField(max_length=200)
     file = models.FileField(upload_to='recourse/')
 

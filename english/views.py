@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from model.models import Course
+from model.models import Course, Recourse
 
 
 # Create your views here.
@@ -23,3 +23,10 @@ def course_detail(request, pk):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def manual(request):
+    context = {
+        'resources': Recourse.objects.all(),
+    }
+    return render(request, 'manual.html', context)
