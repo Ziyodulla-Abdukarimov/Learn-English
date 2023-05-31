@@ -3,12 +3,12 @@
 {% block body %}
     <section class="px-24 py-16">
         {% for i in quizzes %}
-            <p class="text-center text-2xl font-bold bg-gray-100 rounded-xl py-8">{{ i.title }}</p>
+            <p class="text-center text-2xl font-bold bg-indigo-100 rounded-xl py-8">{{ i.title }}</p>
             <div class="grid grid-cols-2 gap-8 py-4 text-center">
                 {% for choice in choices %}
                     <form method="post">
                         {% csrf_token %}
-                        <button class="bg-gray-100 w-full rounded-xl text-xl font-semibold py-8 transition duration-300 ease-in-out hover:shadow-lg p-8 rounded-xl">
+                        <button name="button" value="{{ choice.id }}" class="bg-gray-100 w-full rounded-xl text-xl font-semibold py-8 transition duration-300 ease-in-out hover:shadow-lg p-8 rounded-xl">
                             {{ choice.content }}
                         </button>
                     </form>
